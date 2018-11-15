@@ -1,4 +1,4 @@
-Hevelop Custom Orders Grid Extension
+Hevelop Custom File Uploader
 =====================
 
 Magento 2 module that adds a new menu to magento backend, and adds a feature to upload custom files
