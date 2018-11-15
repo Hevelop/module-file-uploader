@@ -173,7 +173,7 @@ class Storage extends \Magento\Cms\Model\Wysiwyg\Images\Storage
             \Magento\Framework\Data\Collection::SORT_ORDER_ASC
         );
 
-        $allowed = ['jpg', 'jpeg', 'png', 'gif', 'zip'];
+        $allowed = $this->getAllowedFileExtensions();
 
         $collection->setFilesFilter('/\.(' . implode('|', $allowed) . ')$/i');
 
