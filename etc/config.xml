@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <hevelop_uploader>
+            <general>
+                <supported_extensions>jpg,jpeg,png,gif,pdf,csv,zip,txt,xls,xlsx,doc,docx</supported_extensions>
+                <!--<destination_folder>import</destination_folder>-->
+            </general>
+        </hevelop_uploader>
+    </default>
+</config>

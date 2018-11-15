@@ -1,0 +1,24 @@
+{
+    "name": "hevelop/module-hevelop-file-uploader",
+    "description": "Hevelop File Uploader Module",
+    "require": {
+        "hevelop/module-hevelop-base": ">=0.0.1"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hevelop\\FileUploader\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Yuriy Boyko",
+            "email": "yuriy@hevelop.com",
+            "homepage": "https://hevelop.com/",
+            "role": "Developer"
+        }
+    ]
+}

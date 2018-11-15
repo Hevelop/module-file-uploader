@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>
+            File Uploader
+        </title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Hevelop\FileUploader\Block\Adminhtml\Uploader\Content" name="wysiwyg_images.content" template="Magento_Cms::browser/content.phtml">
+                <block class="Hevelop\FileUploader\Block\Adminhtml\Uploader\Tree" name="wysiwyg_images.tree" template="Magento_Cms::browser/tree.phtml"/>
+                <block class="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Content\Uploader" name="wysiwyg_images.uploader" template="Hevelop_FileUploader::browser/content/uploader.phtml"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
+
+
+
+
+
+

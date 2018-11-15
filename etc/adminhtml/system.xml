@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="hevelop_uploader" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>File Uploader</label>
+            <tab>hevelop_base</tab>
+            <resource>Hevelop_FileUploader::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>General Settings</label>
+                <!--<field id="enabled" translate="label" type="select" showInDefault="1" showInWebsite="0" showInStore="0">-->
+                    <!--<label>Enabled</label>-->
+                    <!--<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>-->
+                <!--</field>-->
+                <field id="supported_extensions" translate="label" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Supported Uploader Extensions</label>
+                    <comment>you cannot upload some file formats protected by the system for example .php .sh etc, see protected_extensions for more</comment>
+                </field>
+                <!--in future, we need to be able to upload files in custom directory-->
+                <!--<field id="destination_folder" translate="label" type="text" showInDefault="1" showInWebsite="0" showInStore="0">-->
+                    <!--<label>Uploader Destination Folder</label>-->
+                    <!--<comment>for example "import/files" will upload files to magento_root/import/files </comment>-->
+                <!--</field>-->
+            </group>
+        </section>
+    </system>
+</config>

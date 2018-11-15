@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hevelop_FileUploader::file_uploader_menu"
+             title="Upload File"
+             module="Hevelop_FileUploader"
+             sortOrder="0"
+             action="hevelop/uploader"
+             parent="Hevelop_Base::hevelop_base_menu"
+             resource="Magento_Backend::content" />
+    </menu>
+</config>
