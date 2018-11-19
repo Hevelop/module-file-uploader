@@ -14,10 +14,7 @@ class Upload extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
      * @var \Magento\Framework\Controller\Result\JsonFactory
      */
     protected $resultJsonFactory;
-    /**
-     * @var \Magento\Framework\UrlInterface
-     */
-    protected $urlBuilder;
+
 
     /**
      * Upload constructor.
@@ -25,16 +22,13 @@ class Upload extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
      * @param \Magento\Backend\App\Action\Context              $context
      * @param \Magento\Framework\Registry                      $coreRegistry
      * @param \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
-     * @param \Magento\Framework\UrlInterface                  $urlBuilder
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Registry $coreRegistry,
-        \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory,
-        \Magento\Framework\UrlInterface $urlBuilder
+        \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
     ) {
         $this->resultJsonFactory = $resultJsonFactory;
-        $this->urlBuilder = $urlBuilder;
         parent::__construct($context, $coreRegistry);
     }
 
@@ -68,7 +62,7 @@ class Upload extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
      */
     public function getUrl($route = '', $params = [])
     {
-        return $this->urlBuilder->getUrl($route, $params);
+        return $this->_url->getUrl($route, $params);
     }
 
 
